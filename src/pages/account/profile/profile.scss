@@ -1,0 +1,134 @@
+page-profile {
+
+.login{
+	margin: 40vh 35px 0 35px;
+    text-align: center;
+
+	h4{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+    margin: 25px 0;
+	}
+
+	.button{
+		min-height: 40px;
+	    color: #fff;
+	    border: 2px solid rgba(255, 255, 255, 0.79);
+	    font-weight: 600;
+	    font-size: 13px;
+	    margin: 0;
+	}
+}
+
+	.head{
+		h1{
+			text-align: center;
+		    color: #fff;
+		    font-size: 22px;
+		    margin: 20px;
+		}
+	}
+
+	.spinner{
+		text-align: center;
+    	margin-top: 20vh;
+
+    	.spinner-md-bubbles circle {
+		    fill: #fff;
+		}
+	}
+
+	.profle:before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    bottom: 0;
+	    background: rgba(0, 0, 0, 0.5);
+	}
+
+	.profle{
+		background-image: url("../assets/images/login.jpg");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+
+	    scroll-content{
+	    	margin-top: 20%;
+	    }
+
+	    h2{
+		    margin: 16px;
+	    	font-size: 20px;
+	    }
+
+	    h3{
+		    font-size: 14px;
+			margin: 11px 0;
+			font-family: 'Montserrat-Light';
+			color: #444;
+	    }
+
+	    .label{
+	    	margin: 0;
+	    }
+	    
+	    .forward {
+		    color: #999;
+		    font-size: 20px;
+		    padding: 5px 0;
+		}
+
+		.edit-button{
+			border-radius: 15px;
+    		box-shadow: none;
+    		background: rgba(0, 0, 0, 0.5);
+    		padding: 0 13px 0 8px;
+
+    		ion-icon{
+    			margin: 0 8px;
+    		}
+		}
+
+		.item ion-icon[item-left] + .item-inner{
+		    margin-left: 10px;
+		}
+
+	    fieldset{
+			border: 0;
+			margin: 0;
+			text-align: left;
+			border-top-left-radius: 25px;
+			border-top-right-radius: 25px;
+			background: #fff;
+
+			legend{
+				margin-left: 10%;
+			}
+
+			img{
+				display: block;
+				border: 2px solid #bfbfbf;
+		    	border-radius: 50%;
+		    	width: 100px;
+		    	height: 100px;
+			}
+
+		}
+
+		.list-ios > .item-block:first-child {
+		    border-top: 0;
+		}
+	}
+
+	ion-select {
+	    max-width: 100%;
+	    width: 100%;
+	    font-size: 14px;
+	    padding-left: 0 !important;
+	    font-family: 'Montserrat-Light';
+		color: #444;
+	}
+	
+}

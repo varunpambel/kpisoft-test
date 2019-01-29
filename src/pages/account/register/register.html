@@ -1,0 +1,68 @@
+<ion-header no-border>
+    <ion-navbar>
+        <button ion-button menuToggle style="color: white;">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="register-page">
+
+    <div class="base64Image">
+        <img *ngIf="!form.base64Image" src="{{auth.avatar}}">
+        <img *ngIf="form.base64Image" src="{{form.base64Image}}">
+    </div>
+    
+    <button ion-button full clear (click)="photo()"><ion-icon name="ios-camera-outline" style="font-size: 40px;"></ion-icon></button>
+
+
+    <form #f="ngForm">
+        <ion-list>
+            <ion-item class="item-header">
+                <ion-label>{{"Personal Details" | translate}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.firstname" name="firstname" placeholder="{{'First Name' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.middlename" name="middlename" placeholder="{{'Middle Name' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.lastname" name="lastname" placeholder="{{'Last Name' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.username" name="username" placeholder="{{'Username' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" [(ngModel)]="form.password" name="password" placeholder="{{'Password' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="password" [(ngModel)]="form.confirm_password" name="password" placeholder="{{'Confirm Password' | translate}}"></ion-input>
+            </ion-item>
+
+            <ion-item class="item-header">
+                <ion-label>{{"Contact Details" | translate}}</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-input type="email" [(ngModel)]="form.email" name="Email" placeholder="{{'Email' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="tel" maxlength="10" [(ngModel)]="form.phone" name="phone" placeholder="{{'Phone' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.city" name="city" placeholder="{{'City' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.state" name="state" placeholder="{{'State' | translate}}"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" [(ngModel)]="form.country" name="country" placeholder="{{'Country' | translate}}"></ion-input>
+            </ion-item>
+        </ion-list>
+    </form>
+
+    <div class="signup-button"> 
+        <button ion-button outline full type="submit" text-uppercase [disabled]="disableRegister" (click)="register()">{{buttonText | translate}}</button>
+    </div>
+
+</ion-content>

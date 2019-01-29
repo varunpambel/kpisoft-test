@@ -1,0 +1,180 @@
+page-login {
+
+.login-header {
+    .toolbar-background {
+        background: transparent;
+    }
+    .back-button {
+        color: #fff;
+    }
+}
+
+.login-page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-page{
+	background-image: url("../assets/images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .info {
+        margin: 25% auto;
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+        }
+        h2 {
+            padding-top: 0px;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    .signup {
+        margin: 0 35px;
+        text-align: center;
+        h2 {
+            font-size: 15px;
+            color: #fff;
+            a {
+                color: #edff00;
+                font-size: 15px;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .login {
+        margin: 0 35px;
+
+        ::placeholder{
+            color: #ccc;
+            font-family: 'Montserrat-Light';
+        }
+
+        .list>.item-block:first-child {
+            border-top: none;
+        }
+        .list>.item-block:last-child {
+            border-bottom: 0;
+        }
+        .list .item-block .item-inner {
+            border-bottom: none;
+        }
+        .item {
+            background-color: rgba(241, 241, 241, 0.2);
+            padding-left: 10px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 13px;
+            text-align: right;
+            color: #fff;
+            letter-spacing: 0.2px;
+        }
+        h3 {
+            font-size: 15px;
+            text-align: center;
+        }
+        ion-icon {
+            color: #fff;
+            font-size: 2rem;
+        }
+        .button {
+            min-height: 50px;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.79);
+            font-weight: 600;
+            font-size: 13px;
+            margin: 0;
+        }
+        .item ion-icon[item-left] {
+            margin-left: 0;
+            margin-top: 9px;
+            margin-bottom: 0;
+        }
+        input {
+            font-size: 15px;
+            color: #fff;
+            letter-spacing: 0.2px;
+        }
+        ion-label[fixed] {
+            width: 70px;
+            min-width: 70px;
+            max-width: 85px;
+            color: #fff;
+            font-size: 15px;
+        }
+        .label+ion-input .text-input {
+            margin-left: 0;
+            width: calc(100% - (16px / 2) - 16px);
+        }
+        .item-md ion-icon[item-left]+.item-inner {
+            margin-left: 0;
+        }
+        .item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+            border-bottom-color: #f2f2f2;
+            box-shadow: none;
+        }
+        .item-md.item-input.input-has-focus .item-inner {
+            box-shadow: none;
+        }
+        .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner {
+            border-bottom-color: transparent;
+            box-shadow: none;
+        }
+        .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):last-child {
+            border-bottom-color: #f2f2f2;
+            box-shadow: none;
+        }
+        .list-md .item-input.input-has-focus:last-child {
+            box-shadow: none;
+        }
+        .list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):last-child {
+            border-bottom-color: #f2f2f2;
+            box-shadow: none;
+        }
+    }
+
+}
+
+.language{
+    margin: 0 35px;
+    width: calc(100% - 70px);
+    background-color: rgba(241, 241, 241, 0.2);
+    padding-left: 10px;
+
+    ion-icon{
+        color: #fff;
+        font-size: 20px;
+        padding-top: 3px;
+    }
+
+    ion-select {
+        max-width: 100%;
+        width: 100%;
+        font-size: 13px;
+        padding-left: 0 !important;
+        font-family: 'Montserrat-Light';
+        color: #fff;
+    }
+
+    .select .select-placeholder {
+        color: #fff;
+    }
+
+    .item-inner{
+        margin: 0 !important;
+    }
+}
+
+}
